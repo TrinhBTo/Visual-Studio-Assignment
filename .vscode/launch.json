@@ -10,7 +10,16 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
+            "args": [
+                "-std=c++11",
+                "-Wall",
+                "-Wextra",
+                "-Wno-sign-compare",
+                "-g",
+                "${fileDirname}/*.cpp",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
